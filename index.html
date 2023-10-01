@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venčeni mazličku</title>
+    <link rel="icon" href="dog.png" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 20px;
+        }
+
+        p.page-info {
+          font-size: 24px;
+          color: rgb(118, 117, 117);
+        }
+
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        td:nth-child(1) {
+            width: 30%;
+        }
+
+        td:nth-child(2) {
+            width: 40%;
+        }
+
+        td:nth-child(3) {
+            width: 30%;
+        }
+
+        tr:nth-child(even) {
+            background-color: #e9f6fb;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #fdfafa;
+        }
+
+        @media screen and (max-width: 600px) {
+            table {
+                width: 100%;
+                font-size: 0.6em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tady dej nejaky title nebo vymaz</h1>
+    <p class="page-info">Tady dej najekou info nebo vymaz.</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Phone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="row1">
+                <td>Honza Kocourek</td>
+                <td>Jilkova 17</td>
+                <td>702 111222</td>
+            </tr>
+            <tr id="row2">
+                <td>Kristina Vesela</td>
+                <td>Marikova 28</td>
+                <td>712 333444</td>
+            </tr>
+            <tr id="row3">
+                <td>Cat Lover</td>
+                <td>Letovicka 55</td>
+                <td>728 555 666</td>
+            </tr>
+
+            <tr id="row4">
+              <td>Michal</td>
+              <td>Boskovicka 28</td>
+              <td>712 777 888</td>
+          </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
